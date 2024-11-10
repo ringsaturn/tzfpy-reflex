@@ -2,7 +2,7 @@ import reflex as rx
 import tzfpy
 
 
-class State(rx.State):
+class TZState(rx.State):
     tz: str = ""
 
     def get_tz(self, form_data):
@@ -18,12 +18,28 @@ def index() -> rx.Component:
             rx.color_mode.button(position="top-right"),
             rx.heading("Timezone Lookup", size="9"),
             rx.text("Enter a latitude and longitude to find the timezone.", size="5"),
-            rx.input("Longitude", placeholder="Enter longitude", name="lng", value=-74.0060),
-            rx.input("Latitude", placeholder="Enter latitude", name="lat", value=40.7128),
-            rx.text("Timezone: ", size="5"),
-            rx.text(State.tz, size="5", color="blue.500"),
+            rx.input(
+                "Longitude",
+                placeholder="Enter longitude, eg. -74.0060",
+                name="lng",
+                type="number",
+            ),
+            rx.input(
+                "Latitude",
+                placeholder="Enter latitude, eg. 40.7128",
+                name="lat",
+                type="number",
+            ),
+            rx.text(f"Timezone: {TZState.tz}", size="5"),
             rx.button("Submit", type="submit"),
-            on_submit=State.get_tz,
+            on_submit=TZState.get_tz,
+        ),
+        rx.box(
+            rx.el.span(
+                "Powered by tzfpy.",
+                class_name="px-2 py-0.5 font-small text-center text-slate-9",
+            ),
+            class_name="flex flex-row justify-center items-center w-full",
         ),
     )
 
