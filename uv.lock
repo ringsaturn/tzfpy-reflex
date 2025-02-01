@@ -135,7 +135,7 @@ name = "click"
 version = "8.1.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz", hash = "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a", size = 226593 }
 wheels = [
@@ -742,7 +742,7 @@ wheels = [
 
 [[package]]
 name = "reflex"
-version = "0.6.7"
+version = "0.6.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alembic" },
@@ -776,9 +776,9 @@ dependencies = [
     { name = "wheel" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/52/18/e3e6e9fdddbd14dda916f64e2c2dc2c6b7b802d26cc353e3f0da0dc25335/reflex-0.6.7.tar.gz", hash = "sha256:2b4f85fe025301ab3e8a017bff3a1fdc185198b38fd3365e52f48c648fd735c2", size = 520460 }
+sdist = { url = "https://files.pythonhosted.org/packages/3a/8c/e42af826dc935f12a6486806a944725f292bb1591facc23290247028974a/reflex-0.6.8.tar.gz", hash = "sha256:cc6892e235902b6c86bc64ee6c0459d7c73f9ffedbc37f91d8b48de76a74a688", size = 524828 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d3/3b/b7d9934bcd3e82a5455c55a358db76b1174dd45d347e32eac47d76c7e48b/reflex-0.6.7-py3-none-any.whl", hash = "sha256:dfce3bc111c0fa0406204734b7e540b9e20d6f7d70be74fd46872fedb85af6ad", size = 763118 },
+    { url = "https://files.pythonhosted.org/packages/21/7a/b94b35921fc2039f5229cc746fbf1d80c55440599f2dce937abbab7f8d40/reflex-0.6.8-py3-none-any.whl", hash = "sha256:958f4e81eff1eccd553200dc80b93980b5888dd712bbf51f436d4d245037acec", size = 767050 },
 ]
 
 [[package]]
@@ -1057,17 +1057,21 @@ wheels = [
 
 [[package]]
 name = "tzfpy"
-version = "0.16.0"
+version = "0.16.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/9f/31/fbb1b3f23d1f66a299f3135d4dcc96774dc023d80a7a496de586bc73c413/tzfpy-0.16.0.tar.gz", hash = "sha256:4d31b6b893d5edfa3c6cfb9f38f112ed95b4595330a7d2be93a1e7072e255fe1", size = 38146 }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/ef/57a1003be00b90553f1c8481061e9519a6b5ac57a09367118b68985794f7/tzfpy-0.16.3.tar.gz", hash = "sha256:4f7e6c9e635d554bcd5ae24b2741db40caafc0e3401f7a5d69278da353f44bb5", size = 71330 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bb/06/3734694b66e97fba3155971c69c43cebba39d842d197fa7a3f9e0c4a82c9/tzfpy-0.16.0-cp39-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:518653568af24b7c76c4ec3e279d06a65e034ca23cc06da18f946fc56e0f71bb", size = 12685403 },
-    { url = "https://files.pythonhosted.org/packages/ad/4d/d41e7017ff2ed18b107aed544dcef2dce0dab00b5a431b8e10709fb4a9cd/tzfpy-0.16.0-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c2481b9a4d545d845c235a56293e14dffdf72342bf9137f810dc5888693b1931", size = 6323511 },
-    { url = "https://files.pythonhosted.org/packages/45/72/e79c653db777f0f6d280fa2e474f98720b27bce623589a96b3bc2b6bd8ec/tzfpy-0.16.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9c9e1286f216d225ab3fdfbcaf0ee006e6235a4abb8b2255a6df699c21ec6b4a", size = 6326361 },
-    { url = "https://files.pythonhosted.org/packages/d7/64/5bf9482a676e8dfd726121733d4321550cba177409dcc2248d1bff841764/tzfpy-0.16.0-cp39-abi3-manylinux_2_24_armv7l.whl", hash = "sha256:21d38a6a76a1a5b29d53bed21c2fb27d7f5ea8d0de41c4a33c3e852c25cb9943", size = 6332443 },
-    { url = "https://files.pythonhosted.org/packages/08/1d/ddbbdad88d21059babeacf61f23673149a1466a6128afb2583cbf20266d2/tzfpy-0.16.0-cp39-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:24d650ba29309e9848af7c2bc02af4a823e6686198bb50cae8c92cf6b896cb5b", size = 6504220 },
-    { url = "https://files.pythonhosted.org/packages/ee/f6/6ad518d5183ce742ad85da795d451656c5ba2367a047ea8e5dd836085acc/tzfpy-0.16.0-cp39-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:1638203e8e2001f6c84919c346d8fd0a649c8e72237aa807bae7c5f7ce78a22f", size = 6487995 },
-    { url = "https://files.pythonhosted.org/packages/61/11/be11e3deef41e3c6c1870141cf144f583d33eda3e3d119b478621fc401aa/tzfpy-0.16.0-cp39-abi3-win_amd64.whl", hash = "sha256:63b3602afcaca86972227c92d19537216881219a877082528b183bea2e0dcb63", size = 6193051 },
+    { url = "https://files.pythonhosted.org/packages/c9/da/54ff801f358a487c4354bf45d6e2006ec061e90feab596c8a92230cdf02b/tzfpy-0.16.3-cp313-cp313t-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:e3974b9203d5a7a5cb4b0294e881947dee21c525126606b097d8222b0e51d005", size = 12703238 },
+    { url = "https://files.pythonhosted.org/packages/99/da/5ae6ac03c226b06b472a4e9dab6890c601500379cade230cfdf4d3cf88aa/tzfpy-0.16.3-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b4bee226a2f30a8a90910ae3b17d7a4efbe6f7ddb6f7d13abe2e18d8dc466eea", size = 6332866 },
+    { url = "https://files.pythonhosted.org/packages/81/87/69a82c5b37d0463e183b11f4f44fb87c1e2c86ac4ed1c9148edcb977a717/tzfpy-0.16.3-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dfef4f373fe3150d10bc333203f45f8d209774542e9df9aab80fd7ce7f197d64", size = 6335188 },
+    { url = "https://files.pythonhosted.org/packages/28/7e/fb6b6fa8372690526975e385c15ea05d8e95b6a49118680f036d4a14e105/tzfpy-0.16.3-cp313-cp313t-manylinux_2_24_armv7l.whl", hash = "sha256:ca230bf88665f2b1233ea6e8671dd15484063e363b4aac19f4ab6b277bf8a6f2", size = 6341735 },
+    { url = "https://files.pythonhosted.org/packages/97/8e/1ea1e494bb05122b549d5162c595025e7242506800d6965fa2bf3b603af4/tzfpy-0.16.3-cp39-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:5c19317b58227a499944ce88cdbc592a9f48f1f1bb6195c38fbe627664f7cede", size = 12710689 },
+    { url = "https://files.pythonhosted.org/packages/35/d9/7e090f3046b0922205031f48a1c7f6f62a20c87b8e7dda009152469e2f30/tzfpy-0.16.3-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:69ba2c8736b4f46f4d13bb5d822f7e8e39bf7b3d29841bfa81a16e9f13f54f02", size = 6335851 },
+    { url = "https://files.pythonhosted.org/packages/81/ca/c662caa83d478ce0243512a5e845c77de683559afa353001593c3340fbf5/tzfpy-0.16.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:59097a14239a0d375defbca13b30567c3b253ca9e6855ae7466f8331fe0837ad", size = 6338128 },
+    { url = "https://files.pythonhosted.org/packages/1e/67/a394e6a49494fcf170d934b3d1eaec98fa748f7415bcd0730e31e47f4726/tzfpy-0.16.3-cp39-abi3-manylinux_2_24_armv7l.whl", hash = "sha256:ff1dfd5aca8d112c1ad7c69f2c14e9c41abe42b266cc70b91b868483fd35adf0", size = 6344501 },
+    { url = "https://files.pythonhosted.org/packages/92/7d/3fd2360889a9e5be2ba68b6fb91c82329db69f46a9682bafe26c7bd687b0/tzfpy-0.16.3-cp39-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:5e2bc428602bb187c62092c1d6f295a9b3608b6b8da3831f5c9816df3d08a5f4", size = 6507751 },
+    { url = "https://files.pythonhosted.org/packages/4c/a2/84c3a55711b0b9e9c90fd7d564dcbf1142b6a1966a5b6fe41111e463ad52/tzfpy-0.16.3-cp39-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:b49022c9d4b6c7ade6857a3f649db4d3c1181c0ce1ac0a2a170b08ea03fcd742", size = 6503461 },
+    { url = "https://files.pythonhosted.org/packages/03/e1/4dca26cd03c55f531ed24f2c7b1a60fbfb0844f845894c3085846234408f/tzfpy-0.16.3-cp39-abi3-win_amd64.whl", hash = "sha256:e525ac0ae3045a4106ba4e6593cef7da65a4a55c179e9f4de3f068bb6fbd8c6f", size = 6195643 },
 ]
 
 [[package]]
@@ -1081,8 +1085,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "reflex", specifier = "==0.6.7" },
-    { name = "tzfpy", specifier = "==0.16.0" },
+    { name = "reflex", specifier = "==0.6.8" },
+    { name = "tzfpy", specifier = "==0.16.3" },
 ]
 
 [[package]]
